@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+/*colors*/
+--Verydarkblue: hsl(233, 47%, 7%);/*main background*/
+--Darkdesaturatedblue: hsl(244, 38%, 16%);/*card background*/
+--Softviolet: hsl(277, 64%, 61%);/*accent*/
+--White: hsl(0, 0%, 100%);/*main heading, stats*/
+--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);/*main paragraph*/
+--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.6);/*stat headings*/
+--Layer:rgba(110,30,160,0.7);
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+   font-size: 15px;
+   background-color: var(--Verydarkblue);
+
+
+}
+main{
+    background-color: var(--Darkdesaturatedblue);
+    height: 752px;
+    width: 328px;
+    margin: 88px auto;
+    border-radius: 5px;
+}
+/*Section1*/
+.image{
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+}
+.layer{
+    background-color: var(--Layer);
+    height: 100%;
+    width: 100%;
+}
+/*Section2*/
+.section2{
+    padding: 40px 33px;
+    text-align: center;
+}
+h1{
+     color: var(--White);
+     font-size: 1.8em;
+     font-family: "Inter", sans-serif; 
+     height: 115px;
+}
+span{
+    color: var(--Softviolet);
+}
+p{
+    color: var(--Slightlytransparentwhite);
+    font-family: "Inter", sans-serif; 
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+    
+}
+.stats{
+    color: var(--Slightlytransparentwhite);
+    line-height: 25px;
+
+}
+.amount{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.45em;
+}
+.concept{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 33px;
+
+}
+
+
+/*footer*/
+
+.attribution {
+    margin-bottom: 80px;
+     font-size: 11px;
+    text-align: center;
+    color: var(--Slightlytransparentwhite);
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Media Queries*/
+
+@media only screen and (min-width:1200px) {
+    main{
+        width: 1110px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 178px auto;
+    }
+    .image{
+        width: 540px;
+        height: 100%;
+        background-image: url(./images/image-header-desktop.jpg);
+    }
+    .section2{
+        padding: 75px 70px;
+        text-align: left;
+    }
+    h1{
+        font-size:2.5em;
+    }
+    p{
+        margin-right: 70px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+}
