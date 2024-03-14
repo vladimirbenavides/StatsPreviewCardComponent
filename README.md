@@ -1,5 +1,5 @@
 # Stats Preview Card Component
-Responding landing Page using Html and Css
+Responsive project  using Html and Css
 
 # Live Site Url
 
